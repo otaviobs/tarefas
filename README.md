@@ -11,5 +11,4 @@
   3. Run migrations 
   4. http://localhost is able
 
-Examples:
-https://www.getpostman.com/collections/90b7d4af9f3f53ee0c8d
+Você pode importar esse link no seu Postman para fazer requisições http: https://www.getpostman.com/collections/90b7d4af9f3f53ee0c8d
