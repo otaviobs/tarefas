@@ -17,6 +17,7 @@ class TaskController extends Controller
     {
         $validated = Validator::make($request->all(), [
             'title' => 'required|max:255',
+            'description' => 'max:1000',
             'status' => 'required|max:1'
         ]);
         
@@ -44,6 +45,7 @@ class TaskController extends Controller
 
         $validated = Validator::make($request->all(), [
             'title' => 'required|max:255',
+            'description' => 'max:1000',
             'status' => 'required|max:1'
         ]);
 

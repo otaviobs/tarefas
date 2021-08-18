@@ -16,6 +16,7 @@ class Task extends Migration
         Schema::create("tasks", function($blueprint){
             $blueprint->id();
             $blueprint->string("title");
+            $blueprint->mediumText("description")->nullable();
             $blueprint->string("status")->default("0");
             $blueprint->timestamps();
         });
