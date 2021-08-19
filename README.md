@@ -6,7 +6,7 @@ Por que usar essas tecnologias?
   * Optei o framework Lumen (microframework do Laravel) por ser muito leve e a performance podendo chegar até 4 vezes melhor que o Laravel.
   * O PHP já tem uma ótima ligação com o MySQL e para conservar optei por ele.
 
-Como pode ver a arquitetura é simples, o `docker-compose` irá criar o ambiente da aplicação utilizando o `docker` que é comum numa arquitetura na Cloud.
+Como pode ver a arquitetura é simples, o `docker-compose` irá criar o ambiente da aplicação utilizando o `docker`. Essa arquitetura é comum na Cloud.
 
 O que você precisa ter em nua máquina:
   * Docker
