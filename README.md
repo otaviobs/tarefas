@@ -3,7 +3,7 @@ Desenvolver uma solução de CRUD (create, read, update and delete) para tarefas
 Usando a arquitetura de API RESTful com as tecnologias Docker, PHP (framework Lumen) e MySQL.
 Por que usar essas tecnologias?
   * O Docker facilita a criação do ambiente onde a solução irá ser executada.
-  * Optei o framework Lumen (microframework do Laravel) por ser muito leve e a performance podendo chegar até 4 vezes melhor que o Laravel.
+  * Optei o framework Lumen (micro-framework do Laravel) por ser muito leve e a performance podendo chegar até 4 vezes melhor que o Laravel.
   * O PHP já tem uma ótima ligação com o MySQL e para conservar optei por ele.
 
 Como pode ver a arquitetura é simples, o `docker-compose` irá criar o ambiente da aplicação utilizando o `docker`. Essa arquitetura é comum na Cloud.
