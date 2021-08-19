@@ -12,9 +12,17 @@ O que você precisa ter em nua máquina:
   * Docker
 
 # Instruções para rodar:
-1) Você pode usar o arquivo `init.sh` da raiz, podendo ser via terminal:
+Você pode usar o arquivo `init.sh` da raiz, podendo ser via terminal:
   * **Win:** `bash init.sh`
   * **Linux:** `sh init.sh`
+  Caso não consiga executar o arquivo, pode executar manualmente em seu terminal
+  ```
+docker-compose up --build -d
+
+docker run --rm --interactive --tty -v $PWD/project:/app composer install
+
+docker exec -it php php /var/www/html/artisan migrate
+  ```
   
  Esse arquivo irá fazer:
   1. Build
