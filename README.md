@@ -52,6 +52,6 @@ curl -X PUT http://localhost/tasks/1 \
      -d "title=Titulo alterado&status=1&description=Descricao alterada"
      
 DELETE REQUEST (deletar uma tarefa de acordo com o ID informado):
-curl -X DELETE http://localhost/tasks/4
+curl -X DELETE http://localhost/tasks/1
 
 ```
