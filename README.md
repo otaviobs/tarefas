@@ -31,3 +31,27 @@ docker exec -it php php /var/www/html/artisan migrate
   4. http://localhost is able
 
 Você pode importar esse link no seu Postman para fazer requisições http: https://www.getpostman.com/collections/90b7d4af9f3f53ee0c8d
+
+Ou você pode o cURL em command line:
+```
+http://localhost/task/{id} -- esse é o link para acessar a API e {id} seria o número de identificação da tarefa existente
+GET REQUEST (listar todos as tarefas):
+curl http://localhost/tasks
+
+GET REQUEST BY ID (listar uma tarefa de acordo com o ID informado):
+curl http://localhost/tasks/1
+
+POST REQUEST (cadastrar uma tarefa):
+curl -X POST http://localhost/tasks \
+     -H 'Content-Type: application/json' \
+     -d '{"title": "Titulo de teste","status": "0","description":"Descreva a sua tarefa aqui"}' 
+     
+PUT REQUEST (alterar alguma tarefa):
+curl -X PUT http://localhost/tasks/1 \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "title=Titulo alterado&status=1&description=Descricao alterada"
+     
+DELETE REQUEST (deletar uma tarefa de acordo com o ID informado):
+curl -X DELETE http://localhost/tasks/4
+
+```
